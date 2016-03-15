@@ -18,9 +18,10 @@ public class PlayerWalk : MonoBehaviour {
     private float coolDownAnimation = 1f;
     private float coolWalkAnimation = 1f;
 	void Update() {
-        tpAnim.SetBool("walking", agent.velocity != Vector3.zero);
+        //tpAnim.SetBool("walking", agent.velocity != Vector3.zero);
         coolWalkAnimation += Time.deltaTime;
-        if(Input.GetMouseButtonUp(0)) {
+        
+        if (Input.GetMouseButtonUp(0)) {
             coolWalkAnimation = coolDownAnimation;
         }
         if(Input.GetMouseButton(0) && PC.currentCameraMode == PlayerController.CameraMode.Third) {

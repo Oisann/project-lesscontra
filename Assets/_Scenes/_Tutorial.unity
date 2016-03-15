@@ -41,7 +41,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 6
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_LightmapsMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -66,7 +66,7 @@ LightmapSettings:
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
     m_ReflectionCompression: 2
-  m_LightingDataAsset: {fileID: 112000002, guid: 6982ebfe384a80541939315b8e189eb4,
+  m_LightingDataAsset: {fileID: 112000003, guid: 15b81674e40594d469525baf75eafb47,
     type: 2}
   m_RuntimeCPUUsage: 25
 --- !u!196 &4
@@ -6414,7 +6414,6 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   feedBackElements:
   - {fileID: 112838, guid: caf4ccc6daad3c044bc674c8d02a4a47, type: 2}
-  TPArcher: {fileID: 1412187632}
 --- !u!65 &469667625
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12042,7 +12041,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -12064,7 +12063,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!1001 &915461468
 Prefab:
   m_ObjectHideFlags: 0
@@ -18798,10 +18797,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1403756364}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1412187632 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100002, guid: 9480ca7154d4ddf4c8348dcf64c2c348, type: 3}
-  m_PrefabInternal: {fileID: 898196055}
 --- !u!4 &1412187633 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 9480ca7154d4ddf4c8348dcf64c2c348, type: 3}
@@ -22854,6 +22849,7 @@ MonoBehaviour:
   player: {fileID: 1801371377}
   rotateSense: 2
   mouseRotateSense: 7
+  cameraZoom: 0
 --- !u!4 &1693414595 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 5282082a8f53f904dae147f9dac20c8d, type: 3}

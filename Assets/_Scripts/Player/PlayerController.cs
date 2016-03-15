@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
 	{
         if (isDead ())
 		{
-			Debug.Log ("Player died!");
+			Debug.Log ("Player died! Waiting for animation to finish...");
 
             animator.SetBool("dead", true);
         }

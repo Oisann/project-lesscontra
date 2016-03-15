@@ -14,6 +14,7 @@ public class FollowPlayer : MonoBehaviour {
 
     void Awake() {
         cam = transform.FindChild("CameraControl").FindChild("Main Camera");
+        cam.localPosition = new Vector3(cam.localPosition.x, cam.localPosition.y, cameraZoom);
     }
 
     void Update() {
